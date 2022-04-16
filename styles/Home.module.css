@@ -1,0 +1,380 @@
+/** FONT **/
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+/** NAVBAR **/
+
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 45px;
+  background-color: transparent;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+.teslaLogo{
+  width: 130px;
+  margin-right: 35px;
+}
+.navbarNav, .menu{
+  display: flex;
+  gap: 5px;
+}
+.items{
+  list-style-type: none;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+  padding: 5px 10px;
+  transition: 0.5s ease;
+  -webkit-transition: 0.5s ease;
+  border-radius: 10px;
+}
+.items:hover{
+  background-color: #b3b7bd48;
+}
+.items > .itemsLink{
+  color: #171a20;
+}
+
+/** NAVBAR **/
+
+/** HEADER **/
+
+.section{
+  background: url("../public/images/model-3.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+.section:nth-child(3){
+  background: url("../public/images/model-y.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.section:nth-child(4){
+  background: url("../public/images/model-s.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.section:nth-child(5){
+  background: url("../public/images/model-x.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.section:nth-child(6){
+  background: url("../public/images/solar-panel.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.section:nth-child(7){
+  background: url("../public/images/solar-roof.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.section:nth-child(8){
+  background: url("../public/images/accessories.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.textsArea{
+  text-align: center;
+  margin-top: 70px;
+}
+.textsArea > h3{
+  font-size: 2.5rem;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+.touchless{
+  border-bottom: 1px solid #313131;
+  padding: 3px;
+  cursor: pointer;
+  transition: all 0.4s linear;
+  -webkit-transition: all 0.4s linear;
+}
+.touchless:hover{
+  border-bottom-width: 2px;
+}
+.buttons{
+  display: flex;
+  flex-direction: column;
+}
+.btnMain{
+  display: flex;
+  padding: 240px 0 20px;
+}
+.btnMain > .btn{
+  background-color: rgba(23, 26, 32, 0.8);
+  color: #fff;
+  width: 256px;
+  height: 38px;
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+  font-weight: 600;
+  align-items: center;
+  border-radius: 20px;
+  opacity: 0.9;
+}
+.btn:nth-child(2){
+  background-color: #fff;
+  color: #171A20CC;
+  margin-left: 20px;
+}
+
+.downIcon{
+  height: 40px;
+  animation: downIconAnim 1.5s ease 0s infinite normal none running;
+  -webkit-animation: downIconAnim 1.5s ease 0s infinite normal none running;
+}
+
+@keyframes downIconAnim {
+  0%,
+  20%,
+  50%,
+  80%,
+  100%{
+    transform: translateY(0);
+  }
+  40%{
+    transform: translateY(5px);
+  }
+  60%{
+    transform: translateY(3px);
+  }
+}
+
+/** HEADER **/
+
+/** RESPONSIVE **/
+
+@media screen and (max-width: 1024px) {
+  .navbar{
+    align-items: baseline;
+    padding: 10px 0 0 0;
+    justify-content: space-around;
+  }
+  .navbarNav{
+    display: none;
+  }
+  .teslaLogo{
+    width: 130px;
+    margin-right: 0;
+  }
+  .items{
+    font-size: 20px;
+  }
+  
+  .section{
+    height: 100vh;
+  }
+  .btnMain{
+    display: inline-block;
+    padding: 100px 15px 0;
+  }
+  .btnMain > .btn{
+    width: 300px;
+    height: 40px;
+    font-size: 17px;
+  }
+  .btnMain > .btn:nth-child(2){
+    margin: 8px 0 0;
+  }
+
+  .textsArea{
+    margin-top: 50px;
+  }
+  .textsArea > h3{
+    font-size: 2.5rem;
+  }
+  .textsArea > p{
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navbar{
+    align-items: baseline;
+    padding: 10px 0 0 0;
+    justify-content: space-around;
+  }
+  .navbarNav{
+    display: none;
+  }
+  .teslaLogo{
+    width: 120px;
+    margin-right: 0;
+  }
+  .items{
+    font-size: 16px;
+  }
+  
+  .btnMain{
+    display: inline-block;
+    padding: 100px 15px 0;
+  }
+  .btnMain > .btn{
+    width: 260px;
+    height: 40px;
+    font-size: 15px;
+  }
+  .btnMain > .btn:nth-child(2){
+    margin: 8px 0 0;
+  }
+
+  .section{
+    height: 110vh;
+  }
+  .textsArea{
+    margin-top: 50px;
+  }
+  .textsArea > h3{
+    font-size: 2rem;
+  }
+  .textsArea > p{
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .navbar{
+    align-items: baseline;
+    padding: 10px 0 0 0;
+    justify-content: space-around;
+  }
+  .navbarNav{
+    display: none;
+  }
+  .teslaLogo{
+    width: 105px;
+    margin-right: 0;
+  }
+  .items{
+    font-size: 15px;
+  }
+  
+  .btnMain{
+    display: inline-block;
+    padding: 100px 15px 0;
+  }
+  .btnMain > .btn{
+    width: 225px;
+    height: 40px;
+    font-size: 14px;
+  }
+  .btnMain > .btn:nth-child(2){
+    margin: 5px 0 0;
+  }
+
+  .section{
+    height: 100vh;
+  }
+  .textsArea{
+    margin-top: 0;
+  }
+  .textsArea > h3{
+    font-size: 2rem;
+  }
+  .textsArea > p{
+    font-size: 17px;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .navbar{
+    align-items: baseline;
+    padding: 10px 0 0 0;
+    justify-content: space-around;
+  }
+  .navbarNav{
+    display: none;
+  }
+  .teslaLogo{
+    width: 100px;
+    margin-right: 0;
+  }
+  .items{
+    font-size: 14px;
+  }
+  
+  .btnMain{
+    display: inline-block;
+    padding: 100px 15px 0;
+  }
+  .btnMain > .btn{
+    width: 220px;
+    height: 35px;
+    font-size: 13px;
+  }
+  .btnMain > .btn:nth-child(2){
+    margin: 5px 0 0;
+  }
+
+  .section{
+    height: 100vh;
+  }
+  .textsArea{
+    margin-top: 50px;
+  }
+  .textsArea > h3{
+    font-size: 1.9rem;
+  }
+  .textsArea > p{
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  .navbar{
+    align-items: baseline;
+    padding: 10px 0 0 0;
+    justify-content: space-around;
+  }
+  .navbarNav{
+    display: none;
+  }
+  .teslaLogo{
+    width: 90px;
+    margin-right: 0;
+  }
+  .items{
+    font-size: 12px;
+  }
+  
+  .btnMain{
+    display: inline-block;
+    padding: 100px 15px 0;
+  }
+  .btnMain > .btn{
+    width: 220px;
+    height: 35px;
+    font-size: 12px;
+  }
+  .btnMain > .btn:nth-child(2){
+    margin: 5px 0 0;
+  }
+
+  .section{
+    height: 100vh;
+  }
+  .textsArea{
+    margin-top: 50px;
+  }
+  .textsArea > h3{
+    font-size: 1.7rem;
+  }
+  .textsArea > p{
+    font-size: 14px;
+  }
+}
+
+/** RESPONSIVE **/

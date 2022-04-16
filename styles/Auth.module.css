@@ -1,0 +1,76 @@
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 15px;
+    padding: 60px 0 15px;
+}
+.signInText{
+    padding-bottom: 40px;
+}
+.input{
+    width: 300px;
+    height: 50px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border: 1px solid #f4f4f4;
+    outline: none;
+    border-radius: 50px;
+    color: #393c41;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.loginBtn{
+    background-color: #3e6ae1;
+    border-radius: 50px;
+    width: 300px;
+    height: 50px;
+    color: #fff;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+.line{
+    width: 25%;
+}
+.signUpArea{
+    display: flex;
+    justify-content: center;
+    padding: 10px 0 35px;
+}
+.createAccount{
+    background-color: transparent;
+    border: 3px solid #171a20;
+    color: #171a20;
+    border-radius: 50px;
+    width: 300px;
+    height: 50px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.createAccount:hover{
+    background-color: #171a20;
+    color: #fff;
+}
+.errorText{
+    color: #ea2f1c;
+    margin-top: 0;
+}
+
+@media screen and (max-width: 650px){
+    .input, .loginBtn, .createAccount{
+        width: 240px;
+        height: 40px;
+    }
+    .signInText{
+        padding-bottom: 15px;
+    }
+    .errorText{
+        text-align: center;
+        padding: 0 20px;
+        font-size: 17px;
+    }
+    .line{
+        width: 75%;
+    }
+}

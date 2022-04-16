@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+.logInfo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 75px;
+}
+.logOutBtn{
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: #68696d;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+.btnIcon{
+    margin-right: 10px;
+}
+
+.carPurchase{
+    display: grid;
+    place-items: center;
+    text-align: center;
+    padding: 30px;
+}
+.modelX{
+    width: 80%;
+}
+.btnMain{
+    display: flex;
+}
+.btnMain > .btn{
+    background-color: #3e6ae1;
+    color: #fff;
+    width: 256px;
+    height: 38px;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    align-items: center;
+    border-radius: 20px;
+    opacity: 0.9;
+}
+.btn:nth-child(2){
+    background-color: transparent;
+    border: 2px solid rgba(23, 26, 32, 0.8);
+    color: rgba(26, 34, 49, 0.8);
+    margin-left: 20px;
+}
+
+@media screen and (max-width: 650px) {
+    .logInfo{
+        display: inline-block;
+        padding: 50px 25px;
+    }
+    .logInfo > p{
+        width: 100%;
+    }
+
+    .modelX{
+        width: 120%;
+    }
+    .modelX > h1{
+        font-size: 25px;
+    }
+    .btnMain{
+        display: inline-block;
+    }
+    .btnMain > .btn{
+        width: 220px;
+        height: 35px;
+        font-size: 12px;
+    }
+    .btnMain > .btn:nth-child(2){
+        margin: 10px 0;
+    }
+}
